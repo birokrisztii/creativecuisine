@@ -4,41 +4,27 @@ import { Mail, Instagram, Facebook, ArrowRight, Utensils, Heart, Star } from "lu
 const boards = [
   {
     id: 1,
-    name: "Gourmet Sajtválogatás",
-    description: "Prémium érlelt sajtok, friss szőlő, dió és bogyós gyümölcsök elegáns tálalásban.",
-    price: "16.500 Ft-tól",
-    image: "IMG_9612.png",
+    name: "Dobozaink",
+    description: "Kisebb és nagyobb válogatások elegáns dobozokban, melyek bárhová könnyen szállíthatók.",
+    price: "39.990 Ft-tól (min. 3 doboz)",
+    image: "/gallery/image5.jpeg",
   },
   {
     id: 2,
-    name: "Szív Alakú Meglepetés",
-    description: "Kézműves sajtok és olasz sonkák szív alakú fatálon – tökéletes ajándék vagy randevúra.",
-    price: "14.000 Ft-tól",
-    image: "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    id: 3,
-    name: "Bőségtál Pékáruval",
-    description: "Friss bagettek, sós pálcikák és gazdag antipasti válogatás nagyobb társaságoknak.",
-    price: "22.500 Ft-tól",
-    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    id: 4,
-    name: "Party Antipasti",
-    description: "Caprese nyársak, olasz felvágottak, olívabogyók és ropogós falatkák.",
-    price: "18.000 Ft-tól",
-    image: "https://images.unsplash.com/photo-1608650321190-95e347963660?q=80&w=800&auto=format&fit=crop",
+    name: "Teljes asztali dekoráció",
+    description: "Komplett catering asztalok professzionális elrendezéssel és dekorációval a helyszínen.",
+    price: "Egyedi árajánlat",
+    image: "/gallery/IMG_0448.jpg",
   }
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1544145945-f904253d0c71?q=80&w=800&auto=format&fit=crop",
-  "https://picsum.photos/seed/gal1/800/1200",
-  "https://picsum.photos/seed/gal2/800/1000",
-  "https://picsum.photos/seed/gal3/800/1100",
-  "https://picsum.photos/seed/gal4/800/900",
-  "https://picsum.photos/seed/gal5/800/1300"
+  "/gallery/IMG_9612.png",
+  "/gallery/IMG_9612.png",
+  "/gallery/IMG_9612.png",
+  "/gallery/IMG_9612.png",
+  "/gallery/IMG_9612.png",
+  "/gallery/IMG_9612.png"
 ];
 
 export default function App() {
@@ -75,8 +61,8 @@ export default function App() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-6xl md:text-8xl leading-[0.9] mb-8">
-              Művészet a <br />
-              <span className="italic font-light text-stone-400">táladon.</span>
+              Művészet az <br />
+              <span className="italic font-light text-stone-400">asztalodon.</span>
             </h1>
             <p className="text-xl text-stone-600 max-w-md mb-10 leading-relaxed">
               Exkluzív charcuterie tálak és catering dekorációk, melyek felejthetetlenné teszik az eseményedet.
@@ -97,7 +83,7 @@ export default function App() {
             className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl"
           >
             <img 
-              src="IMG_9612.png" 
+              src="/gallery/IMG_9612.png" 
               alt="Creative Cuisine Catering" 
               className="object-cover w-full h-full"
               referrerPolicy="no-referrer"
@@ -110,48 +96,29 @@ export default function App() {
           </motion.div>
         </div>
       </section>
-
-      {/* Features */}
-      <section className="py-20 bg-stone-100/50">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-          <div className="space-y-4">
-            <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm">
-              <Utensils className="text-stone-400" size={24} />
-            </div>
-            <h3 className="text-xl font-serif font-medium">Friss alapanyagok</h3>
-            <p className="text-stone-500 leading-relaxed">Csak a legkiválóbb, válogatott sajtokat, felvágottakat és friss zöldségeket használjuk.</p>
-          </div>
-          <div className="space-y-4">
-            <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm">
-              <Heart className="text-stone-400" size={24} />
-            </div>
-            <h3 className="text-xl font-serif font-medium">Szenvedéllyel készül</h3>
-            <p className="text-stone-500 leading-relaxed">Minden tálat egyedi kompozícióként, nagy odafigyeléssel és esztétikai érzékkel állítunk össze.</p>
-          </div>
-          <div className="space-y-4">
-            <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm">
-              <Star className="text-stone-400" size={24} />
-            </div>
-            <h3 className="text-xl font-serif font-medium">Prémium élmény</h3>
-            <p className="text-stone-500 leading-relaxed">A látványtól az utolsó falatig minden a minőségről és a vendéglátás öröméről szól.</p>
+      {/* Services Title Only */}
+      <section className="pt-24 pb-8 bg-stone-100/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-serif">Szolgáltatásaink</h2>
           </div>
         </div>
       </section>
 
       {/* Boards Grid */}
-      <section id="talaink" className="py-32 px-6">
+      <section id="talaink" className="py-24 px-6 bg-stone-100/50">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <p className="text-stone-400 uppercase tracking-[0.2em] text-sm mb-4">Választékunk</p>
+              <p className="text-stone-400 uppercase tracking-[0.2em] text-sm mb-4">Kínálatunk</p>
               <h2 className="text-5xl font-serif">Kóstolj bele a <span className="italic">kreativitásba</span></h2>
             </div>
             <p className="text-stone-500 max-w-sm">
-              Válassz népszerű tálaink közül, vagy kérj egyedi összeállítást a rendezvényedre.
+              Válassz dobozaink közül, vagy kérj egyedi összeállítást a rendezvényedre.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {boards.map((board, index) => (
               <motion.div 
                 key={board.id}
@@ -176,6 +143,35 @@ export default function App() {
                 <p className="text-stone-500 text-sm leading-relaxed">{board.description}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features / Services Boxes Only */}
+      <section className="py-24 bg-stone-100/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-12">
+            <div className="space-y-4 text-center md:text-left">
+              <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm mx-auto md:mx-0">
+                <Utensils className="text-stone-400" size={24} />
+              </div>
+              <h3 className="text-xl font-serif font-medium">Friss alapanyagok</h3>
+              <p className="text-stone-500 leading-relaxed">Csak válogatott sajtokat, felvágottakat, friss zöldségeket és gyümölcsöket használunk.</p>
+            </div>
+            <div className="space-y-4 text-center md:text-left">
+              <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm mx-auto md:mx-0">
+                <Heart className="text-stone-400" size={24} />
+              </div>
+              <h3 className="text-xl font-serif font-medium">Szenvedéllyel készül</h3>
+              <p className="text-stone-500 leading-relaxed">Minden tálat egyedi kompozícióként, nagy odafigyeléssel és esztétikai érzékkel állítunk össze.</p>
+            </div>
+            <div className="space-y-4 text-center md:text-left">
+              <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm mx-auto md:mx-0">
+                <Star className="text-stone-400" size={24} />
+              </div>
+              <h3 className="text-xl font-serif font-medium">Prémium élmény</h3>
+              <p className="text-stone-500 leading-relaxed">A látványtól az utolsó falatig minden a minőségről és a vendéglátás öröméről szól.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -214,7 +210,7 @@ export default function App() {
       <section id="rendeles" className="py-32 px-6 bg-stone-900 text-stone-50 overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
           <img 
-            src="https://images.unsplash.com/photo-1544145945-f904253d0c71?q=80&w=1200&auto=format&fit=crop" 
+            src="/gallery/IMG_9612.png" 
             alt="Background" 
             className="object-cover w-full h-full"
             referrerPolicy="no-referrer"
