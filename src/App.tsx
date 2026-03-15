@@ -4,41 +4,41 @@ import { Mail, Instagram, Facebook, ArrowRight, Utensils, Heart, Star } from "lu
 const boards = [
   {
     id: 1,
-    name: "Gourmet Brunch Tál",
-    description: "Vajas croissant-ok, érlelt sonkák, sárgadinnye és prémium sajtválogatás.",
-    price: "15.500 Ft-tól",
-    image: "input_file_3.png",
+    name: "Gourmet Sajtválogatás",
+    description: "Prémium érlelt sajtok, friss szőlő, dió és bogyós gyümölcsök elegáns tálalásban.",
+    price: "16.500 Ft-tól",
+    image: "IMG_9612.png",
   },
   {
     id: 2,
-    name: "Friss Kerti Zöldségtál",
-    description: "Ropogós idényzöldségek házi mártogatósokkal (hummusz, guacamole, fűszeres joghurt).",
-    price: "12.000 Ft-tól",
-    image: "input_file_0.png",
+    name: "Szív Alakú Meglepetés",
+    description: "Kézműves sajtok és olasz sonkák szív alakú fatálon – tökéletes ajándék vagy randevúra.",
+    price: "14.000 Ft-tól",
+    image: "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 3,
-    name: "Édes Gyümölcsös Válogatás",
-    description: "Friss egzotikus gyümölcsök, házi sütemények és édes falatkák.",
-    price: "13.500 Ft-tól",
-    image: "input_file_2.png",
+    name: "Bőségtál Pékáruval",
+    description: "Friss bagettek, sós pálcikák és gazdag antipasti válogatás nagyobb társaságoknak.",
+    price: "22.500 Ft-tól",
+    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 4,
     name: "Party Antipasti",
-    description: "Caprese nyársak, olasz felvágottak, olívabogyók és sós pálcikák.",
+    description: "Caprese nyársak, olasz felvágottak, olívabogyók és ropogós falatkák.",
     price: "18.000 Ft-tól",
-    image: "input_file_9.png",
+    image: "https://images.unsplash.com/photo-1608650321190-95e347963660?q=80&w=800&auto=format&fit=crop",
   }
 ];
 
 const galleryImages = [
-  "input_file_4.png",
-  "input_file_6.png",
-  "input_file_15.png",
-  "input_file_7.png",
-  "input_file_12.png",
-  "input_file_13.png"
+  "https://images.unsplash.com/photo-1544145945-f904253d0c71?q=80&w=800&auto=format&fit=crop",
+  "https://picsum.photos/seed/gal1/800/1200",
+  "https://picsum.photos/seed/gal2/800/1000",
+  "https://picsum.photos/seed/gal3/800/1100",
+  "https://picsum.photos/seed/gal4/800/900",
+  "https://picsum.photos/seed/gal5/800/1300"
 ];
 
 export default function App() {
@@ -97,7 +97,7 @@ export default function App() {
             className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl"
           >
             <img 
-              src="input_file_5.png" 
+              src="IMG_9612.png" 
               alt="Creative Cuisine Catering" 
               className="object-cover w-full h-full"
               referrerPolicy="no-referrer"
@@ -214,7 +214,7 @@ export default function App() {
       <section id="rendeles" className="py-32 px-6 bg-stone-900 text-stone-50 overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
           <img 
-            src="input_file_10.png" 
+            src="https://images.unsplash.com/photo-1544145945-f904253d0c71?q=80&w=1200&auto=format&fit=crop" 
             alt="Background" 
             className="object-cover w-full h-full"
             referrerPolicy="no-referrer"
